@@ -1,0 +1,173 @@
+.secContainer
+	max-width: 81.25rem
+	overflow: hidden
+	margin: 0 auto
+	+media(desktop)
+		max-width: 68.75rem
+		overflow: hidden
+		margin: 0 auto
+.forProd
+		.img
+				margin-top: 3rem
+				height: 24.375rem
+				width: 100%
+				background-image: url('../img/forProduct/urunler.jpg')
+				background-position: center center
+.apd__title-block
+	text-align: center
+.product__info
+	margin-top: .9375rem
+.img-block
+	margin: 0 auto
+	max-width: 50rem
+	+media(tablet)
+		display: flex
+		align-items: center
+		list-style-type: none
+		max-width: 25rem
+		flex-flow: row wrap
+	+media(phone)
+		max-width: 25rem
+.img-block__img
+	width: 400px
+.APD12
+		padding-top: 2rem
+		.apd__title12
+			font-weight: bold
+			font-size: 2.5rem
+.product
+		padding-bottom: .3125rem
+		border-bottom: 1px solid #000
+		&__info
+				display: inline-block
+				display: flex
+				margin: 0 auto
+		&__paraph
+				display: inline-block
+				margin-right: 2rem
+				color: #0075BF
+				font-weight: bold
+				span
+						font-weight: normal
+.product__btn
+	background: #0075BF
+	border: none
+	padding: .25rem .9375rem
+	border-radius: .4375rem
+	color: #fff
+	font-weight: bold
+	&:hover
+		color: #ffffff
+		text-decoration: none
+	&:after
+		content: ''
+		width: 100%
+		height: 1px
+		background: red
+.accordion dl,
+.accordion-list
+	border: 1px solid #fff
+	display: block
+	width: 100%
+
+.accordion dd,
+.accordion__panel
+	background-color: #ffffff
+	font-size: 1em
+	line-height: 1.5em
+	width: 100%
+
+.accordion
+	position: relative
+	background-color: #eee
+
+.container
+	// max-width: 1100px
+	// margin: 0 auto
+	// padding: 2em 0 2em 0
+
+.accordionTitle,
+.accordion__Heading
+	background-color: #0066B1
+	text-align: center
+	width: 100%
+	height: 3rem
+	font-weight: 700
+	padding: .4375rem .625rem
+	display: block
+	text-decoration: none
+	color: #fff
+	transition: background-color 0.5s ease-in-out
+	border-bottom: 1px solid darken(#38cc70, 5%)
+
+	&:after
+		content: "+"
+		font-size: 1.5em
+		line-height: 0.5em
+		float: right
+		margin-left: auto
+		transition: transform 0.3s ease-in-out
+
+
+	&:hover
+		background-color: darken(#0066B3, 10%)
+		color: #fff
+		text-decoration: none
+
+.accordionTitleActive,
+.accordionTitle.is-expanded
+	background-color: darken(#0066B1, 20%)
+
+	&:after
+		transform: rotate(-225deg)
+		transform-origin: center center
+
+.accordionItem
+	overflow: hidden
+	//SHAME: magic number to allow the accordion to animate
+
+	max-height: 100em
+	transition: max-height 1s
+
+	@media screen and (min-width: 48em)
+		max-height: 200em
+		transition: max-height 0.5s
+.accordion-content 
+	padding: 0 2.5rem
+.accordionItem.is-collapsed
+	max-height: 0
+
+.no-js .accordionItem.is-collapsed
+	max-height: auto
+
+.animateIn
+	animation: accordionIn 0.45s normal ease-in-out both 1
+
+.animateOut
+	animation: accordionOut 0.45s alternate ease-in-out both 1
+
+.column-item
+	border: 1px solid black
+.span-table
+	font-weight: bold
+.img-table
+	width: 100px
+
+@keyframes accordionIn
+	0%
+		opacity: 0
+		transform: scale(0.9) rotateX(-60deg)
+		transform-origin: 50% 0
+
+	100%
+		opacity: 1
+		transform: scale(1)
+
+@keyframes accordionOut
+	0%
+		opacity: 1
+		transform: scale(1)
+
+	100%
+		opacity: 0
+		transform: scale(0.9) rotateX(-60deg)

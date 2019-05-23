@@ -1,0 +1,41 @@
+.navBar
+	.navBarWrap
+		.navBarLogo
+			a.navBarLogo_link(href="index.html")
+				img.logogImg(src="../img/logo.png", alt="logo")
+		.navBarList
+			ul.navList.navList__responsive
+				li.navItem
+					a.navItem_link(href="about.html") О Компании
+				li.navItem ПРОДУКТЫ
+					span.fas.fa-sort-down
+					div.linkWrap6
+						p.link
+							a(href="genProduct.html") ДИЗЕЛЬНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
+				li.navItem 
+					a.navItem_link(href="service.html") УСЛУГИ
+				li.navItem
+					a.navItem_link(href="contacts.html") КОНТАКТЫ
+
+.navBar__mobile
+	.navBarWrap
+		.navBarLogo
+			a.logo__link(href="index.html")
+				img.logogImg(src="../img/logo.png", alt="logo")
+	nav.navbar.navbar-expand-lg.navbar-dark.bg-more-dark
+		button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+			span.navbar-toggler-icon
+		#navbarNavDropdown.collapse.navbar-collapse
+			ul.navbar-nav
+				li.nav-item.dropdown.bg-more-dark
+					a#navbarDropdownMenuLink.nav-link(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+						a.navItem_link(href="about.html") О Компанииы
+					
+				li.nav-item.dropdown.bg-more-dark
+					a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ПРОДУКТЫ
+					.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
+						a.dropdown-item(href="genProduct.html") ДИЗЕЛЬНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
+				li.nav-item.dropdown.bg-more-dark
+					a.nav-link(href='service.html') УСЛУГИ
+				li.nav-item.bg-more-dark
+					a.nav-link(href='contacts.html') КОНТАКТЫ

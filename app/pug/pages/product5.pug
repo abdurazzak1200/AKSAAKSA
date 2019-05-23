@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Aksa Jeneratör
+		link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="img/favicon/apple-touch.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-114x114.png")
+		link(rel="stylesheet" href="css/style.min.css?rev=@@hash")
+		link(rel='stylesheet', href='./../../../node_modules/bootstrap/dist/css/bootstrap.min.cssw', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+	body
+		include ../navBar.pug
+
+		section.secondPage
+			.secondPage__img
+				img(src="../img/aksadizel.jpg", alt="#")
+			section.generator
+				.container
+					ul.page__navigation
+						li.page__navigation_item
+							a.page__navigation_link(href="#").
+								Главная страница &gt;
+						li.page__navigation_item
+							a.page__navigation_link(href="#").
+								Продукты &gt;
+						li.page__navigation_item Дизельные генераторные установки
+					.generator__texts
+						h2.generator__title.
+							Дизельные генераторные установки
+						nav.generator__navigation
+							a.generator__navigation_item--active(href="#") Выбрать все
+							a.generator__navigation_item(href="#") 0-20 kVA
+							a.generator__navigation_item(href="#") 21-75 kVA
+							a.generator__navigation_item(href="#") 76-200 kVA
+							a.generator__navigation_item(href="#") 201-400 kVA
+							a.generator__navigation_item(href="#") 401-999 kVA
+							a.generator__navigation_item(href="#") 1000 kVA Выше
+				.container
+					.generator__info
+						ul.generator__list
+							li.generator__item_active.generator__item
+								select.generator__select(name="quantity")
+									option(value="") 20
+									option(value="") 50
+									option(value="") Выбрать все
+								h2.generator__model_title MODEL
+								.generator__power
+									span.generator__power_title 
+										|дополнительная
+										br
+										|мощность
+									span.generator__power_kva kva
+									span.generator__power_kw kw
+								.generator__power
+									span.generator__power_title 
+										|Основная
+										br
+										|мощность
+									span.generator__power_kva kva
+									span.generator__power_kw kw
+								h2.generator__model_title hz
+								h2.generator__model_title Двигатель
+								h2.generator__model_title Более подробная информация
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC500 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") ACC 550
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 550.00
+										span.extra__power_kw 440.00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 500.00
+										span.extra__power_kw 400.00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AVP275-700 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AVP 550
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 550.00
+										span.extra__power_kw 440.00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 500.00
+										span.extra__power_kw 400.00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name VOLVO
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP550.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AVP 550
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 550.00
+										span.extra__power_kw 440.00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 500.00
+										span.extra__power_kw 400.00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name VOLVO
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (3).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 461-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 561.25
+										span.extra__power_kw 449.00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 510.00
+										span.extra__power_kw 408.00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name DOOSAN
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (3).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 464-4
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 577,50
+										span.extra__power_kw 462,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 523,75
+										span.extra__power_kw 419,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name DOOSAN
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (3).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 580
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 580,00
+										span.extra__power_kw 464,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 525,00
+										span.extra__power_kw 420,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name DOOSAN
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC550 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 496-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 618,75
+										span.extra__power_kw 495,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 553,75
+										span.extra__power_kw 443,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC550 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 500-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 625,00
+										span.extra__power_kw 500,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 562,50
+										span.extra__power_kw 450,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC550 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 501-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 625,00
+										span.extra__power_kw 500,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 562,50
+										span.extra__power_kw 450,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 504-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 625,00
+										span.extra__power_kw 500,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 562,50
+										span.extra__power_kw 450,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 630
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 630,00
+										span.extra__power_kw 504,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 575,00
+										span.extra__power_kw 460,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name DOOSAN
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 507-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 631,25
+										span.extra__power_kw 505,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 572,50
+										span.extra__power_kw 458,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name DOOSAN
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AVP275-700 (2).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AVP 655
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 660,00
+										span.extra__power_kw 528,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 600,00
+										span.extra__power_kw 480,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name VOLVO
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP550 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AP 660
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 660,00
+										span.extra__power_kw 528,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 600,00
+										span.extra__power_kw 480,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name PERKINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 562,6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 692,50
+										span.extra__power_kw 554,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 630,00
+										span.extra__power_kw 504,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name DOOSAN
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5//AVP275-700 (2).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AVP 700
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 700,00
+										span.extra__power_kw 560,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 636,00
+										span.extra__power_kw 508,80
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name VOLVO
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AVP275-700 (2).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 700
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 700,00
+										span.extra__power_kw 560,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 638,00
+										span.extra__power_kw 510,40
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (8).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 710
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 710,00
+										span.extra__power_kw 568,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 640,00
+										span.extra__power_kw 512,40
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP880.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 715
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 715,00
+										span.extra__power_kw 572,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 650,00
+										span.extra__power_kw 520,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name PERKINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AD410-825 (8).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AD 715
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 750,00
+										span.extra__power_kw 600,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 680,00
+										span.extra__power_kw 544,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name DOOSAN
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+				.page__switching
+					ul.switching__list
+						li.switching__item
+							a.switching__item_link(href="#") 1
+						li.switching__item 
+							a.switching__item_link(href="#") 2
+						li.switching__item 
+							a.switching__item_link(href="#") 3
+						li.switching__item 
+							a.switching__item_link(href="#") 4
+						li.switching__item.switching__item_active 
+							a.switching__item_link(href="#") 5
+						li.switching__item 
+							a.switching__item_link(href="../../product6.html") 6
+						li.switching__item 
+							a.switching__item_link(href="#") 7
+						li.switching__item.switching__item_active 
+							a.switching__item_link(href="#") 8 &#62;
+				
+		include ../footer.pug
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	script(src="./js/script.js")
+	script(src="../js/navBar.js")
+	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+	
+	

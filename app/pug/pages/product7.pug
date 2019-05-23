@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Aksa Jeneratör
+		link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="img/favicon/apple-touch.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-114x114.png")
+		link(rel="stylesheet" href="css/style.min.css?rev=@@hash")
+		link(rel='stylesheet', href='./../../../node_modules/bootstrap/dist/css/bootstrap.min.cssw', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+	body
+		include ../navBar.pug
+
+		section.secondPage
+			.secondPage__img
+				img(src="../img/aksadizel.jpg", alt="#")
+			section.generator
+				.container
+					ul.page__navigation
+						li.page__navigation_item
+							a.page__navigation_link(href="#").
+								Главная страница &gt;
+						li.page__navigation_item
+							a.page__navigation_link(href="#").
+								Продукты &gt;
+						li.page__navigation_item Дизельные генераторные установки
+					.generator__texts
+						h2.generator__title.
+							Дизельные генераторные установки
+						nav.generator__navigation
+							a.generator__navigation_item--active(href="#") Выбрать все
+							a.generator__navigation_item(href="#") 0-20 kVA
+							a.generator__navigation_item(href="#") 21-75 kVA
+							a.generator__navigation_item(href="#") 76-200 kVA
+							a.generator__navigation_item(href="#") 201-400 kVA
+							a.generator__navigation_item(href="#") 401-999 kVA
+							a.generator__navigation_item(href="#") 1000 kVA Выше
+				.container
+					.generator__info
+						ul.generator__list
+							li.generator__item_active.generator__item
+								select.generator__select(name="quantity")
+									option(value="") 20
+									option(value="") 50
+									option(value="") Выбрать все
+								h2.generator__model_title MODEL
+								.generator__power
+									span.generator__power_title 
+										|дополнительная
+										br
+										|мощность
+									span.generator__power_kva kva
+									span.generator__power_kw kw
+								.generator__power
+									span.generator__power_title 
+										|Основная
+										br
+										|мощность
+									span.generator__power_kva kva
+									span.generator__power_kw kw
+								h2.generator__model_title hz
+								h2.generator__model_title Двигатель
+								h2.generator__model_title Более подробная информация
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC550 (1).jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 600-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 750,00
+										span.extra__power_kw 600,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 681,25
+										span.extra__power_kw 545,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP1125-1400.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AP 1125
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1125,00
+										span.extra__power_kw 900,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1023,00
+										span.extra__power_kw 818,40
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name PERKINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1100.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 921
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1143,76
+										span.extra__power_kw 915,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1030,00
+										span.extra__power_kw 824,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name COMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP1125-1400.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AP 1250
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1250,00
+										span.extra__power_kw 1000,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1125,00
+										span.extra__power_kw 900,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name PERKINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1100.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1015-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1263,75
+										span.extra__power_kw 1011,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1142,50
+										span.extra__power_kw 914,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1100.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1016-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1270,00
+										span.extra__power_kw 1016,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1150,00
+										span.extra__power_kw 920,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP1125-1400.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AP 1400
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1400,00
+										span.extra__power_kw 1120,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1265,00
+										span.extra__power_kw 1102,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name PERKINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1410.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1410
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1410,00
+										span.extra__power_kw 1128,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1280,00
+										span.extra__power_kw 1024,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name COMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/APD825-1915M.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") APD 1425 M
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1425,00
+										span.extra__power_kw 1140,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1290,00
+										span.extra__power_kw 1032,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name MITSUBISHI
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1410.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1460-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1471,25
+										span.extra__power_kw 1177,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1337,50
+										span.extra__power_kw 1070,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1410.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1275-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1568,75
+										span.extra__power_kw 1255,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1481,25
+										span.extra__power_kw 1185,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1410.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1515-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1646,25
+										span.extra__power_kw 1317,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1496,25
+										span.extra__power_kw 1197,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1410.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1650
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1650,00
+										span.extra__power_kw 1320,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1400,00
+										span.extra__power_kw 1120,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name CUMMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/APD825-1915M.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") APD 1650 M
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1650,00
+										span.extra__power_kw 1320,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1500,00
+										span.extra__power_kw 1200,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name MITSUBISHI
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP1650-2500.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AP 1650
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1650,00
+										span.extra__power_kw 1320,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1500,00
+										span.extra__power_kw 1200,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name PERKINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1675.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1675
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1675,00
+										span.extra__power_kw 1340,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1400,00
+										span.extra__power_kw 1120,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AC1675.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AC 1530-6
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1705,00
+										span.extra__power_kw 1364,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1550,00
+										span.extra__power_kw 1240,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 60
+									span.generator__engine_name CUMMINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/AP1650-2500.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") AP 1875
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1875,00
+										span.extra__power_kw 1500,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1705,00
+										span.extra__power_kw 1364,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name PERKINS
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/APD825-1915M.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") APD 1915 M
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 1915,00
+										span.extra__power_kw 1532,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1750,00
+										span.extra__power_kw 1400,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name MITSUBISHI
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/APD2100M.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") APD 2100 M
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 2100,00
+										span.extra__power_kw 1680,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 1875,00
+										span.extra__power_kw 1500,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name MITSUBISHI
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../../img/genProduct5/APD825-1915M.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") APD 2250 M
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 2250,00
+										span.extra__power_kw 1800,00
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 2000,00
+										span.extra__power_kw 1600,00
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name MITSUBISHI
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="forProduct.html") Get an Offer
+				.page__switching
+					ul.switching__list
+						li.switching__item
+							a.switching__item_link(href="#") 1
+						li.switching__item 
+							a.switching__item_link(href="#") 2
+						li.switching__item 
+							a.switching__item_link(href="#") 3
+						li.switching__item 
+							a.switching__item_link(href="#") 4
+						li.switching__item
+							a.switching__item_link(href="../../product5.html") 5
+						li.switching__item.switching__item_active 
+							a.switching__item_link(href="../../product6.html") 6
+						li.switching__item 
+							a.switching__item_link(href="../../product7.html") 7
+						li.switching__item
+							a.switching__item_link(href="../../product8.html") 8 &#62;
+				
+		include ../footer.pug
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	script(src="./js/script.js")
+	script(src="../js/navBar.js")
+	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+	
+	

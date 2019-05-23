@@ -1,0 +1,418 @@
+.navBar
+	width: 100%
+	margin: 0
+	padding: 0
+	position: relative
+	position: fixed
+	top: 0
+	z-index: 2
+.navBarWrap
+	display: flex
+	align-items: center
+	width: 100%
+	height: 110px
+	margin: 0
+	padding: 0
+	background: #222
+	position: relative
+	border-top: 1px solid #101010
+.navBarLogo
+	text-align: center
+	+media(phone)
+		margin: 0 auto
+	+media(tablet)
+		margin: 0 auto
+		width: 463%
+.navBarList
+	width: 85%
+	color: #fff
+
+.navList
+	display: flex
+	list-style: none
+	text-transform: uppercase
+	font-family: Arial
+	float: right
+	margin-top: 1rem
+	+media(phone)
+		display: block
+	+media(tablet)
+		width: 100%
+		box-sizing: border-box
+		background: #222
+		display: inline-block
+		position: absolute
+		padding: .5rem
+		bottom: rem(-903px)
+		left: 0
+		border-top: 1px solid #393939
+
+.navItem_link
+	color: #fff
+	+media(tablet)
+		color: rgba(255,255,255,.5)
+		font-size: 1rem
+	&:hover
+		color: #fff
+		+media(tablet)
+			font-size: 1rem
+			color: rgba(255,255,255,.5)
+
+
+
+
+
+.navItem
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-right: 1.9rem
+	position: relative
+	font-size: .8rem
+	cursor: pointer
+	+media(tablet)
+		margin: rem(20px)
+		display: block
+
+	&:hover
+		.linkWrap1
+			visibility: visible
+			opacity: 1
+		.linkWrap2
+			visibility: visible
+			opacity: 1
+		.linkWrap3Q
+			visibility: visible
+			opacity: 1
+		.linkWrap4
+			visibility: visible
+			opacity: 1
+		.linkWrap5
+			visibility: visible
+			opacity: 1
+		.linkWrap6
+			visibility: visible
+			opacity: 1
+		.linkWrap7
+			visibility: visible
+			opacity: 1
+		.linkWrap8
+			visibility: visible
+			opacity: 1
+
+.humburger__icon
+	display: none
+	+media(tablet)
+		display: block
+
+.linkWrap1
+	+media(tablet)
+		transition: .5s
+		padding: 0 1.3rem 0 1.3rem
+		top: 2rem
+		left: 50%
+		transform: translateX(-50%)
+		background: #3d3d3d
+		list-style: none
+		width: 12.2rem
+		overflow: hidden
+.linkWrap1
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	left: 50%
+	transform: translateX(-50%)
+	background: #3d3d3d
+	list-style: none
+	width: 12.2rem
+	overflow: hidden
+.linkWrap2
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	left: 50%
+	transform: translateX(-50%)
+	background: #3d3d3d
+	list-style: none
+	width: 13.5rem
+	overflow: hidden
+.linkWrap3
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	left: 50%
+	transform: translateX(-50%)
+	background: #3d3d3d
+	list-style: none
+	width: 28rem
+	overflow: hidden
+.linkWrap4
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	left: 50%
+	transform: translateX(-50%)
+	background: #3d3d3d
+	list-style: none
+	width: 16rem
+	overflow: hidden
+.linkWrap5
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	left: 50%
+	transform: translateX(-50%)
+	background: #3d3d3d
+	list-style: none
+	width: 14.5rem
+	overflow: hidden
+.linkWrap6
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	left: 50%
+	transform: translateX(-50%)
+	background: #3d3d3d
+	list-style: none
+	width: 16.2rem
+	overflow: hidden
+.linkWrap7
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	right: 0
+	background: #3d3d3d
+	list-style: none
+	width: 23.3rem
+	overflow: hidden
+.linkWrap8
+	transition: .5s
+	visibility: hidden
+	opacity: 0
+	padding: 0 1.3rem 0 1.3rem
+	position: absolute
+	top: 2rem
+	right: 0
+	background: #3d3d3d
+	list-style: none
+	width: 17.6rem
+	overflow: hidden
+
+// .linkWrap1.linkWrap2.linkWrap3.linkWrap4.linkWrap5.linkWrap6.linkWrap7.linkWrap8
+// 	+media(tablet)
+// 		display: block
+
+.link
+	color: #fff
+	width: 135%
+	margin: 0 0 0 -13%
+	padding-left: 15%
+	padding-top: .4rem
+	padding-bottom: .4rem
+	vertical-align: middle
+	&:hover
+		background: #999
+		a
+			color: #666
+.link a
+	padding-bottom: 1rem
+	color: #fff
+	&:hover
+		text-decoration: none
+.fa-sort-down
+	font-size: .8rem
+	margin-bottom: .3rem
+	margin-left: .3rem
+.arama	
+	display: flex
+	position: absolute
+	top: 0
+	right: 10px
+	+media(phone)
+		display: block
+	+media(tablet)
+		display: block
+.aramaChild
+	color: #9d9d9c
+	font-size: .8rem
+	margin-right: .5rem
+	margin-top: 3px
+.fa-search
+	color: #9d9d9c
+	margin-right: 1rem
+	font-size: 1.3rem
+	margin-top: 5px
+	cursor: pointer
+.langWrap
+	background: #000
+	border: 1px solid #fff
+	color: #fff
+	width: 50px
+	height: 20px
+	margin-top: 5px
+	cursor: pointer
+.lang
+	font-size: .9rem
+	float: left
+	margin-left: 5px
+.fa-angle-down
+	float: right
+	font-size: .8rem
+	margin-right: 5px
+	margin-top: 5px
+
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4
+  width: 29px
+  height: 25px
+  position: relative
+  margin: 50px auto
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .5s ease-in-out
+  -moz-transition: .5s ease-in-out
+  -o-transition: .5s ease-in-out
+  transition: .5s ease-in-out
+  cursor: pointer
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span
+  display: block
+  position: absolute
+  height: 9px
+  width: 100%
+  background: #ffffff
+  border-radius: 9px
+  opacity: 1
+  left: 0
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .25s ease-in-out
+  -moz-transition: .25s ease-in-out
+  -o-transition: .25s ease-in-out
+  transition: .25s ease-in-out
+
+/* Icon 2
+
+#nav-icon2
+  span
+    display: block
+    position: absolute
+    height: 3px
+    width: 50%
+    background: #ffffff
+    opacity: 1
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+    -webkit-transition: .25s ease-in-out
+    -moz-transition: .25s ease-in-out
+    -o-transition: .25s ease-in-out
+    transition: .25s ease-in-out
+    &:nth-child(even)
+      left: 50%
+      border-radius: 0 9px 9px 0
+    &:nth-child(odd)
+      left: 0px
+      border-radius: 9px 0 0 9px
+    &:nth-child(1), &:nth-child(2)
+      top: 9px
+    &:nth-child(3), &:nth-child(4)
+      top: 18px
+    &:nth-child(5), &:nth-child(6)
+      top: 27px
+  &.open span
+    &:nth-child(1), &:nth-child(6)
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+    &:nth-child(2), &:nth-child(5)
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+    &:nth-child(1)
+      left: -1px
+      top: 6px
+    &:nth-child(2)
+      left: calc(50% - 4px)
+      top: 6px
+    &:nth-child(3)
+      left: -50%
+      opacity: 0
+    &:nth-child(4)
+      left: 100%
+      opacity: 0
+    &:nth-child(5)
+      left: -1px
+      top: 17px
+    &:nth-child(6)
+      left: calc(50% - 3px)
+      top: 17px
+
+.navBar
+	+media(tablet)
+		display: none
+.navBar__mobile
+	display: none
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 999
+	+media(tablet)
+		display: flex
+
+.nav-link
+	color: #fff
+.navbar
+	background: #222
+	position: absolute
+	left: 0
+
+.navbar-nav
+	position: absolute
+	top: 100px
+	z-index: 3
+	position: none
+	position: fixed
+	top: 107px
+	left: 0
+	width: 100%
+
+.bg-more-dark
+	background: #222
+
+.nav-item
+	padding: 10px
+
+.dropdown-menu
+	background: #000
+
+.dropdown-item
+	color: #fff

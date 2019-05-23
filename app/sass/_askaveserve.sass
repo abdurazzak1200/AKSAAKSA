@@ -1,0 +1,54 @@
+html, body 
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+.aksaserve
+    background-image: url('../img/aksa-ve-cevre-bg.jpg')
+    color: #fff
+    padding-bottom: .625rem
+    border-bottom: .4375rem solid #006DB7
+    text-align: center
+    padding-top: 3rem
+    +media(tablet)
+        background-size: cover
+.aska__title
+    margin-bottom: 6rem
+    font-size: 3rem
+    +media(laptop)
+
+.aska__list
+    display: flex
+    align-items: center
+    list-style-type: none
+    margin-bottom: 0
+    padding: 0
+    text-align: center
+    +media(laptop)
+        align-items: center
+        justify-content: center
+        list-style-type: none
+    +media(tablet)
+        justify-content: center
+        list-style-type: none
+        display: block
+        margin-left: 10%
+.aska__item
+    margin-right: 3.125rem
+    +media(laptop)
+        flex: 1 1 18.75rem
+        margin-bottom: 1.5rem
+.aska__paraph
+    font-size: .75rem
+    +media(laptop)
+        display: none
+.aska__link
+    display: block
+    color: #ffffff
+    text-decoration: none
+    +media(tablet)
+        display: block
+        text-align: center
+    &:hover
+        color: #ffffff
+        text-decoration: none

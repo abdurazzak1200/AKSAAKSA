@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Aksa Jeneratör
+		link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="img/favicon/apple-touch.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-114x114.png")
+		link(rel="stylesheet" href="css/style.min.css?rev=@@hash")
+		link(rel='stylesheet', href='./../../../node_modules/bootstrap/dist/css/bootstrap.min.cssw', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+	body
+		include ../navBar.pug
+		sectiom.forProd
+			.img
+		section.APD12
+			div.secContainer
+				.apd__title-block
+					h3.apd__title12 APD 12 A
+				.product
+					a.product__btn(href='#') ЗАКАЗАТЬ
+				div.product__info
+					p.product__paraph 
+						| ПРОДУКТЫ : 
+						span AKSA
+					p.product__paraph 
+						| ГЕНЕРАТОР: 
+						span AK 109 
+					p.product__paraph 
+						| МОДЕЛЬ ПОНЕЛИ УПРАВЛЕНИЯ: 
+						span DSE 6020
+
+				.img-block
+					img.img-block__img(src="../../img/forProduct/APD 17A-6.jpg", alt="#")
+					img.img-block__img(src="../../img/forProduct/ANS 1-1A.jpg", alt="#")
+				.accordion
+							dl
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion1" aria-expanded="false" aria-controls="accordion1") О продукте
+								dd#accordion1.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									p
+										|Aksa power generation system, providing optimum performance, and reliability, for stationary standby, prime power, and continuous duty applications. All generator sets are factory build, and production tested.
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion2" aria-expanded="false" aria-controls="accordion2")
+										| СЕРТИФИКАТЫ
+								dd#accordion2.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									p TS ISO 8528
+									p CE
+									p SZUTEST
+									p 2000/14/EC
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
+										| Общие Характеристики
+								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									table#tabloMotorOzellik.table.table-bordered.urunDetayTablo.alignLeft
+										tbody
+											tr
+												th(colspan="2")
+													| Название Модели
+												td(colspan="2")
+													| APD 12 A
+													br
+											tr
+												th(colspan="2")
+													| Частота  (Гц)
+												td(colspan="2")
+													| 50
+													br
+											tr
+												th(colspan="2")
+													| вид используемого топлива
+												td(colspan="2")
+													| Diesel
+													br
+											tr
+												th(colspan="2")
+													| бренд и модель двигателя
+												td(colspan="2")
+													| AKSA - A3CRX14
+													br
+											tr
+												th(colspan="2")
+													| генератор переменного тока марки и модели
+												td(colspan="2")
+													| Aksa - AK 109 
+													br
+											tr
+												th(colspan="2")
+													| Модель панели управления
+												td(colspan="2")
+													| DSE 6020 
+													br
+											tr
+												th(colspan="2")
+													| кожуха
+												td(colspan="2")
+													| ANS 1
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
+										| 3 Количество фаз, 50 Hz, PF 0.8
+								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									table.table.table-bordered.urunDetayTablo
+										tbody
+											tr
+												th(rowspan="2") Напряжение (В)
+												th(colspan="2") Мощность Standby
+												th(colspan="2") Мощность Prime
+												th(rowspan="2") Standby Amper
+											tr.subtitle
+												th kVA
+												th kW
+												th kVA
+												th kW
+											tr
+												td 400/231
+												td 11.5
+												td 9.20
+												td 10.6
+												td 8.48
+												td 16.60
+
+									p
+										span.span-table Мощность Standby : 
+										| Используется при подаче электроэнергии переменной электрической нагрузке в случае прерывания надежного источники сети. ESP совместим с ISO8528. Перегрузка не допускается.
+									p
+										span.span-table Мощность Prime : 
+										| Используется для неограниченных рабочих часов ежегодно при подаче электроэнергии переменной электрической нагрузке. PRP совместим с ISO 8528. Согласно ISO3046 в 12-часовой период работы 1 час используется для 10% перегрузки.
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
+										| двигатель особенность
+								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									table#tabloMotorOzellik.table.table-bordered.urunDetayTablo.alignLeft
+										tbody
+											tr
+												th(colspan="2")
+													| двигатель
+												td(colspan="2")
+													| AKSA
+													br
+											tr
+												th(colspan="2")
+													| Инженерная модель
+												td(colspan="2")
+													| A3CRX14
+											tr
+												th(colspan="2")
+													| Число цилиндров
+												td(colspan="2")
+													| 3 cylinders - in line
+											tr
+												th
+													| Диаметр поршня x  Ход поршня
+												th.unit
+													| mm
+												td(colspan="2")
+													| 80 X 90
+											tr
+												th
+													| Объем цилиндров
+												th.unit
+													| L
+												td(colspan="2")
+													| 1,36
+											tr
+												th(colspan="2")
+													| Забор воздуха и охлаждение
+												td(colspan="2")
+													| Naturally Aspirated
+											tr
+												th(colspan="2")
+													| Степень сжатия
+												td(colspan="2")
+													| 18:1
+											tr
+												th
+													| скорость
+												th.unit
+													| d/dk
+												td(colspan="2")
+													| 1500
+											tr
+												th
+													| Объем масла в двигателе (включая фильтр) (L)
+												th.unit
+													| L
+												td(colspan="2")
+													| 4
+											tr
+												th.col1(colspan="2")
+													| дополнительная мощность
+												td(colspan="2")
+													| 12.8/17.16
+											tr
+												th.col1(colspan="2")
+													| Основная мощность
+												td(colspan="2")
+													| 11.7/15.68
+											tr
+												th.col1(rowspan="2")
+													| Количество подогревателей блока
+											tr
+												th.unit
+												td(colspan="2")
+													| 1
+											tr
+												th.col1(rowspan="2")
+													| Мощность подогревателя блока
+											tr
+												th.unit
+												td(colspan="2")
+													| 500
+											tr
+												th.col1(rowspan="2")
+													| вид используемого топлива
+											tr
+												th.unit
+												td(colspan="2")
+													| Diesel
+											tr
+												th.col1(rowspan="2")
+													| Топливная система и тип
+											tr
+												th.unit
+												td(colspan="2")
+													| Direct
+											tr
+												th.col1(rowspan="2")
+													| Тип ТНВД
+											tr
+												th.unit
+												td(colspan="2")
+													| Direct
+											tr
+												th.col1(rowspan="2")
+													| Регулятор частоты вращения двигателя
+											tr
+												th.unit
+												td(colspan="2")
+													| Mechanic
+											tr
+												th.col1(rowspan="2")
+													| рабочее напряжение
+											tr
+												th.unit
+												td(colspan="2")
+													| 12 Vdc
+											tr
+												th.col1(rowspan="2")
+													| емкость аккумулятора (Qty/Ah)
+											tr
+												th.unit
+												td(colspan="2")
+													| 1x36
+											tr
+												th.col1(rowspan="2")
+													| Способ охдаждения
+											tr
+												th.unit
+												td(colspan="2")
+													| Water Cooled
+											tr
+												th.col1(rowspan="2")
+													| Воздушный поток вентилятора (м3/мин)
+											tr
+												th.unit
+												td(colspan="2")
+													| 192
+											tr
+												th.col1(rowspan="2")
+													| Объем Охлаждающей Жидкости(Только с Двигателем/Радиатором)(л)
+											tr
+												th.unit
+												td(colspan="2")
+													| 18,5
+											tr
+												th.col1(rowspan="2")
+													| воздушный фильтр
+											tr
+												th.unit
+												td(colspan="2")
+													| Dry Type
+											tr
+												th.col1(rowspan="2")
+													| Расход топлива при 100% нагрузке (л/ч)
+											tr
+												th.unit
+												td(colspan="2")
+													| 3,4
+											tr
+												th.col1(rowspan="2")
+													| Расход топлива при 75% нагрузке (л/ч)
+											tr
+												th.unit
+												td(colspan="2")
+													| 2,6
+											tr
+												th.col1(rowspan="2")
+													| Расход топлива при 50% нагрузке (л/ч)
+											tr
+												th.unit
+												td(colspan="2")
+													| 1,7
+
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
+										| ТИП АЛЬТЕРНАТОРА
+								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									table#tabloAlternatorOzellik.table.table-bordered.urunDetayTablo.alignLeft
+										tbody
+											tr
+												th(colspan="2") Производитель
+												td Aksa
+											tr
+												th(colspan="2") генератор переменного тока марки и модели
+												td AK 109
+											tr
+												th Частота  (Гц)
+												th.unit Hz
+												td 50
+											tr
+												th.col1 Мощность (кВА)
+												th.unit kVA
+												td 11,3
+											tr
+												th(colspan="2") дизайн
+												td   Brushless
+											tr
+												th Напряжение (В)
+												th.unit V
+												td 400
+											tr
+												th(colspan="2") фаза
+												td 3
+											tr
+												th(colspan="2") Регулятор напряжения
+												td SX460
+											tr
+												th Система возбуждения
+												th.unit (+/-)
+												td 1,5%
+											tr
+												th(colspan="2") Класс изоляции
+												td H
+											tr
+												th(colspan="2") класс защиты
+												td IP22
+											tr
+												th(colspan="2") Активная мощность
+												td 0.8
+											tr
+												th охлаждающий воздух
+												th.unit m3
+												td 4,26
+
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
+										| Размеры и вес
+								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									table#tabloBoyutAgirlik.table.table-bordered.urunDetayTablo
+										tbody
+											tr
+												th Открытый тип
+												th
+													| Вес (Нефть и вода нет)
+													br
+													| (kg.)
+												th
+													| длина (mm)
+													br
+													| (mm.)
+												th
+													| ширина (mm)
+													br
+													| (mm.)
+												th
+													| высота (mm)
+													br
+													| (mm.)
+												th Емкость топливного бака (L.) (Lt.)
+											tr
+												td
+													img(src="../../img/forProduct/APD 17A-6.jpg" width="70" alt="")
+												td 350 
+												td 1400
+												td 760
+												td 927
+												td 32
+											tr
+												th кожуха
+												th
+													| Вес (Нефть и вода нет)
+													br
+													| (kg.)
+												th
+													| длина (mm)
+													br
+													| (mm.)
+												th
+													| ширина (mm)
+													br
+													| (mm.)
+												th
+													| высота (mm)
+													br
+													| (mm.)
+												th Емкость топливного бака (L.) (Lt.)
+											tr
+												td
+													| ANS 1
+													br
+													img(src="../../img/forProduct/ANS 1-1A.jpg" alt="" width="70")
+												td 470
+												td 1522 
+												td 823
+												td 1127
+												td 32
+
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion2" aria-expanded="false" aria-controls="accordion2")
+										| стандартные функции
+								dd#accordion2.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									p
+									| Water cooled, Diesel engine 
+									br
+									| Radiator with mechanical fan 
+									br
+									| Protective grille for rotating and hot parts
+									br
+									| Electric starter and charge alternator 
+									br
+									| Starting battery (with lead acid) including rack and cables 
+									br
+									| Base frame design incorporates an integral fuel tank and anti-vibration isolators 
+									br
+									| Flexible fuel connection hoses 
+									br
+									| Single bearing, class H alternator 
+									br
+									| Industrial exhaust silencer and steel bellows supplied separately(for open sets) 
+									br
+									| Static battery charger 
+									br
+									| Manual for application and installation
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion2" aria-expanded="false" aria-controls="accordion2")
+										| Оборудование на Заказ
+								dd#accordion2.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									ul.table-list ENGINE
+										li.table-item Remote Radiator Cooling
+										li.table-item Fuel-Water Seperator Filter
+									ul.table-list ALTERNATOR
+										li.table-item Anti-Condensation Heater
+									ul.table-list CONTROL SYSTEM
+										li.table-item Charge Ammeter
+									ul.table-list TRANSFER SWITCH
+										li.table-item Three Pole Contactor
+										li.table-item Four Pole Contactor
+										li.table-item Three or four pole motor operated circuit breaker
+									ul.table-list OTHER ACCESSORIES
+										li.table-item Main Fuel Tank
+										li.table-item Automatic or manual fuel filling system
+										li.table-item Manual oil drain pump
+										li.table-item Residential silencer
+										li.table-item Enclosure: weater protective or sound attenuated
+										li.table-item Trailer
+										li.table-item Tool kit for maintenance
+
+
+		include ../footer.pug
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	script(src="./js/script.js")
+	script(src="../js/navBar.js")
+	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")

@@ -1,0 +1,298 @@
+.container
+	max-width: 100%
+	overflow: hidden
+	margin: 0 auto
+	+media(tablet)
+		max-width: 655px
+	+media(phone)
+		max-width: 360px
+
+
+.secondPage__img
+	+media(tablet)
+		overflow: hidden
+		margin-top: rem(5px)
+
+.secondPage__img img
+	max-width: 100%
+	height: 60vh
+	+media(tablet)
+		margin-top: rem(62px)
+		width: 100%
+		height: 35vh
+
+.generator
+	border-bottom: rem(6px) #0067b2 solid
+	border-top: rem(6px) #0067b2 solid
+
+.page__navigation
+	display: flex
+	margin-top: rem(10px)
+	text-transform: uppercase
+	flex-wrap: wrap
+	justify-content: center
+
+
+.page__navigation_item
+	display: inline
+	margin-left: 5px
+	font-size: rem(16px)
+	+media(tablet)
+		font-size: rem(14px)
+	+media(phone)
+		font-size: rem(12px)
+
+.page__navigation_link
+	color: #000
+	cursor: pointer
+	font-weight: bold
+
+.generator__title
+	text-align: center
+	font-size: rem(56px)
+	+media(tablet)
+		font-size: rem(32px)
+
+.generator__navigation
+	display: flex
+	justify-content: center
+	font-size: rem(17px)
+	+media(tablet)
+		margin-bottom: rem(10px)
+		font-size: rem(13px)
+
+.generator__navigation_item--active
+	color: #16a085
+	text-decoration: underline
+	+media(tablet)
+
+.generator__navigation_item
+	color: #474747
+	margin-left: rem(30px)
+	+media(tablet)
+		margin-left: rem(7px)
+
+.generator__info
+	border: 1px #0066b1 solid
+	padding: 20px
+	margin-top: 20px
+	+media(tablet)
+		padding: rem(15px)
+
+.generator__model_title
+	text-align: center
+	color: #0066b1
+	font-weight: bold
+	font-size: rem(19px)
+
+.generator__list
+	padding: 0
+
+.generator__power
+	padding-right: 40px
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+
+.generator__power_title
+	width: 100%
+	text-align: center
+	color: #0066b1
+	font-weight: bold
+	font-size: rem(19px)
+
+.generator__power_kva
+	color: #6d6e71
+	font-size: rem(19px)
+
+.generator__power_kw
+	color: #6d6e71
+	font-size: rem(19px)
+
+.generator__item
+	// display: flex
+	// justify-content: space-around
+	// align-items: center
+	display: grid
+	grid-template-columns: 1fr 1fr 3fr 3fr 1fr 2fr 2fr
+	justify-items: center
+	align-items: center
+	box-sizing: border-box
+	border: 1px #0066b1 solid
+	margin-bottom: 10px
+	+media(tablet)
+		display: flex
+		flex-flow: column
+		align-items: center
+		justify-content: center
+		text-transform: uppercase
+		margin-bottom: 15px
+
+.desktop__block
+	display: flex
+	justify-content: stretch
+	align-items: center
+	// width: 80%
+	// border-right: 1px #0066b1 solid
+	+media(tablet)
+		margin-top: rem(20px)
+		display: block
+		border: none
+
+.custom-control
+	margin-left: 10px
+
+.compare
+	display: none
+	+media(tablet)
+		display: block
+
+.generator__img img
+	width: 100px
+	+media(tablet)
+		display: block
+		margin: 0 auto
+		width: 35%
+
+.custom-checkbox-a
+	+media(tablet)
+		display: flex
+		justify-content: center
+	
+
+.generator__model
+	display: flex
+	justify-content: stretch
+	align-items: center
+	height: 100%
+	// border-right: 1px #0066b1 solid
+	position: relative
+	+media(tablet)
+		border: none
+		text-align: center
+
+.generator__model_text
+	display: none
+	+media(tablet)
+		display: block
+		text-transform: uppercase
+		color: #6D6E7A
+
+.generator__model_name
+	padding-right: 10px
+
+
+.generator__item_title
+	display: none
+	+media(tablet)
+		display: block
+		text-align: center
+		color: #0066b1
+		font-size: rem(13px)
+
+.extra__power
+	padding-right: rem(40px)
+	display: flex
+	justify-content: 
+	align-items: center
+	height: 100%
+	// border-right: 1px #0066b1 solid
+	+media(tablet)
+		padding-right: rem(13px)
+		border: none
+		color: #6D6E7A
+		display: flex
+		justify-content: center
+
+.extra__power_kva
+	// border-right: 1px #0066b1 solid
+	+media(tablet)
+		border-right: 1px #0066b1 solid
+
+.extra__power_kw
+	margin-left: rem(33px)
+	box-sizing: border-box
+	+media(tablet)
+		margin: rem(0px)
+
+.extra__power span
+	+media(tablet)
+		padding: 0 rem(13px)
+
+.generator__item_hz
+	display: none
+	+media(tablet)
+		display: block
+		text-align: center
+		font-size: rem(15px)
+		color: #6D6E7A
+		font-weight: normal
+
+.generator__engine_name
+	display: flex
+	justify-content: stretch
+	align-items: center
+	height: 100%
+	// border-right: 1px #0066b1 solid
+	+media(tablet)
+		display: none
+
+.generator__buttons
+	display: flex
+	justify-content: space-around
+	align-items: center
+	+media(tablet)
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		text-align: center
+		margin: 20px 0
+
+.generator__buttons a
+	+media(tablet)
+		margin: 0 5px
+		color: #ffffff
+		padding: 10px 14px
+
+.btn__icons
+	margin-right: 10px
+	text-align: center
+	vertical-align: middle
+	padding: rem(5px) rem(10px)
+	font-size: 30px
+	color: #fff
+	border-radius: 50%
+	background: #0066b1
+	+media(tablet)
+		font-size: 20px
+		background: #0066b1
+
+.btn__get
+	border-radius: 4px
+	background: #A5C958
+	color: #fff
+	padding: 10px
+
+.page__switching
+	+media(tablet)
+	margin: 20px 0
+
+.switching__list
+	list-style-type: none
+	color: #0066B1
+	display: flex
+	justify-content: flex-end
+	+media(tablet)
+		justify-content: center
+
+.switching__item_active
+	font-weight: bold
+
+.switching__item
+	margin-right: 20px
+	+media(tablet)
+		margin: 0 10px
+
+.generator__item_active
+	+media(tablet)
+		display: none
